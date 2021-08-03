@@ -1,2 +1,5 @@
-# Zoom-Clone-Coding
-줌 클론 코딩
+<div align="center">
+# Zoom Clone Coding
+
+# 🛠 Tech Stack
+</div>
