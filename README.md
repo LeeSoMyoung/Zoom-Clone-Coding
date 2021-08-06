@@ -40,4 +40,18 @@ whale 브라우저에서 메세지를 보내고 엔터를 치면,
   
   ![image](https://user-images.githubusercontent.com/47571973/128333433-335ca8d5-2257-4f95-b55a-9758380e25a5.png)
 기본값은 익명(Anon)이므로 웨일에서 보낸 메세지는 Anon이 되고, 크롬에서 보낸 메세지의 발신자는 크롬이 된다.
+  
+  (2) 2021-08-06
+  ```
+ npm install socket.io
+  ```
+  socket.io를 설치한다. 설치 후, http://localhost:3000/socket.io/socket.io.js 를 실행하면
+  ![image](https://user-images.githubusercontent.com/47571973/128518050-cf57d4d3-492a-4efe-809f-94c1d7e518f6.png)
+
+  다음과 같이 된다. socket.io를 사용하여 실시간으로 업데이트 되게 할 예정이다.
+  
+  다만, 이전에 만들었던것들은 채팅창이고, 채팅창이 있는 회의실을 만들어야 한다. 따라서, 다음과 같이 pug를 수정해주었다.
+  ![image](https://user-images.githubusercontent.com/47571973/128521189-42fc19ac-c8c5-40ff-94d0-afa5765bf2a5.png)
+
+  그리고, socket.io에서 콜백함수와 방 제목을 받아오도록 하였는데, socket.io에 대한 이해가 부족하여 나머지는 더 공부 후 만들 예정이다.
 </div>
