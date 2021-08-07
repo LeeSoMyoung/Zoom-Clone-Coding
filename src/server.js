@@ -23,12 +23,31 @@ const server = http.createServer(app); // http 서버
 const io = SocketIo(server);
 
 io.on('connection',(socket)=>{
-    
-    socket.on('enter_room',(msg, done)=>{
-        console.log(msg);
-        setTimeout(done,2000);
+
+    socket['nickname']='Anon';
+
+    socket.on('enter_room',(roomName, done)=>{
+        socket.join(roomName);
+        done();
+
+        // 모두에게 채팅을 보내기
+        socket.to(roomName).emit('welcome',socket.nickname);
     });
 
+    socket.on('disconnecting',()=>{
+        socket.rooms.forEach((room)=>{
+            socket.to(room).emit('bye',socket.nickname);
+        })
+    });
+
+    socket.on('new_message',(msg, room, done)=>{
+        socket.to(room).emit('new_message',`${socket.nickname}: ${msg}`);
+        done();
+    });
+
+    socket.on('nickname',(nickname)=>{
+        socket['nickname']=nickname;
+    });
 });
 
 /*

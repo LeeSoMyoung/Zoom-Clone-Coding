@@ -14,6 +14,15 @@ html(lang="en")
                 form
                     input(placeholder = "회의실 이름", required, type = "text")
                     button 회의실 입장하기
-
+            
+            div#room
+                h3
+                ul
+                form#nickname
+                    input(placeholder = '사용하실 닉네임을 입력하세요.', required, type = 'text')
+                    button 설정
+                form#msg
+                    input(placeholder = '메세지를 입력하세요.', required, type = 'text')
+                    button 보내기
         script(src="/socket.io/socket.io.js") 
         script(src="/public/js/app.js") 
