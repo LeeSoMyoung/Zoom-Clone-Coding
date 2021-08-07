@@ -53,5 +53,26 @@ whale 브라우저에서 메세지를 보내고 엔터를 치면,
   다만, 이전에 만들었던것들은 채팅창이고, 채팅창이 있는 회의실을 만들어야 한다. 따라서, 다음과 같이 pug를 수정해주었다.
   ![image](https://user-images.githubusercontent.com/47571973/128521189-42fc19ac-c8c5-40ff-94d0-afa5765bf2a5.png)
 
-  그리고, socket.io에서 콜백함수와 방 제목을 받아오도록 하였는데, socket.io에 대한 이해가 부족하여 나머지는 더 공부 후 만들 예정이다.
+  그리고, socket.io에서 콜백함수와 회의실 이름을 받아오도록 하였는데, socket.io에 대한 이해가 부족하여 나머지는 더 공부 후 만들 예정이다.
+  
+  
+  (3) 2021-08-07
+  
+  회의실에 입장한 후, 회의실 내부 채팅창에서 채팅을 할 수 있어야한다. 즉, 화면의 순서는 회의실 입장 -> 채팅이 되어야 한다.
+  ![image](https://user-images.githubusercontent.com/47571973/128590740-82729e89-83d9-4131-8a56-1794ca1fc7b1.png)
+
+  가장 먼저 서버를 실행하면 다음과 같이 입장할 회의실을 입력하는 화면이 뜬다. 그 후, 입장할 회의실을 입력하면 
+  ![image](https://user-images.githubusercontent.com/47571973/128590759-9048b039-2117-4574-b421-66115d543c38.png)
+
+  다음과 같이 채팅창이 뜨도록 햇다. 또한, 회의실에 다른 사람이 참여하면, 참여했다는 문구가 뜨도록 한다. 이때, 회의실 참여 후, 자신의 닉네임을 바꿀 수 있도록 한다.   
+  ![image](https://user-images.githubusercontent.com/47571973/128602418-940100ed-5453-4f14-a286-c562f6573018.png)
+
+    크롬 브라우저의 창은 크롬으로 닉네임을 설정하고, 웨일 브라우저의 닉네임은 웨일로 설정하고 채팅을 쳐보았다.
+![image](https://user-images.githubusercontent.com/47571973/128602456-aa077285-f086-4730-88da-768a44185681.png)
+![image](https://user-images.githubusercontent.com/47571973/128602458-96e4f5dc-71d9-4d99-a174-cc607fc4d675.png)
+![image](https://user-images.githubusercontent.com/47571973/128602478-0a821e43-9a91-4b21-9324-95b95879620a.png)
+
+  그리고, 다른 유저가 회의실을 나갈 때도 그 유저가 나갔다는 표시가 되도록 했다.
+  ![image](https://user-images.githubusercontent.com/47571973/128602493-763a63f4-545b-443c-9d95-1978ff1fa23e.png)
+
 </div>
