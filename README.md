@@ -75,4 +75,30 @@ whale 브라우저에서 메세지를 보내고 엔터를 치면,
   그리고, 다른 유저가 회의실을 나갈 때도 그 유저가 나갔다는 표시가 되도록 했다.
   ![image](https://user-images.githubusercontent.com/47571973/128602493-763a63f4-545b-443c-9d95-1978ff1fa23e.png)
 
+  (4) 2021-08-08
+  
+  회의실 생성 뿐만 아니라, 이미 생성되어 있는 방도 표시할 수 있도록 하였다.
+  ![image](https://user-images.githubusercontent.com/47571973/128634113-3e92008e-d5e5-4621-8a8b-9b2553e5780b.png)
+
+  크롬과 웨일 브라우저가 각각 있고, 웨일에서 '테스트'라는 회의실을 만들면 크롬에서 이미 존재하는 회의실 리스트에 '테스트' 회의실이 뜬다.
+  ![image](https://user-images.githubusercontent.com/47571973/128634143-fb87fb3f-155e-41cf-a24c-8126521dac26.png)
+
+  그리고, 회의실 내부 인원 수 역시 뜰 수 있도록 했다. 이를 테스트하기 위해 크롬, 웨일을 사용했다.
+  ![image](https://user-images.githubusercontent.com/47571973/128635049-82a277c9-57c4-4479-95d9-262ac3299365.png)
+![image](https://user-images.githubusercontent.com/47571973/128635082-63b2a148-ebe7-4e30-8d3e-2a6348d72557.png)
+
+  위와 같이 잘 업데이트 됨을 알 수 있다. 
+  
+  
+  그리고, admin ui를 설정하였다. 밑과 같은 상황일 때, 
+  ![image](https://user-images.githubusercontent.com/47571973/128635161-14a774dc-ecb8-455a-a786-37631813a859.png)
+  
+  admin ui에서는 여러 정보들을 확인할 수 있다.
+  ![image](https://user-images.githubusercontent.com/47571973/128635220-ee13baab-6dde-4206-9062-08848cc4e906.png)
+  ![image](https://user-images.githubusercontent.com/47571973/128635199-bb78ed9f-bfe1-41ac-8303-9151e5a68fdb.png)
+  ![image](https://user-images.githubusercontent.com/47571973/128635203-fe90f553-4b1d-4791-bcbc-acd90dd43a48.png)
+![image](https://user-images.githubusercontent.com/47571973/128635206-31a30a5a-32d4-4f71-b209-707faca5f722.png)
+
+
+
 </div>
