@@ -9,21 +9,11 @@ html(lang="en")
     body 
         header
             h1 Zoom Clone Coding
-        main 
-            div#welcome
-                form
-                    input(placeholder = "회의실 이름", required, type = "text")
-                    button 회의실 생성
-                h4 회의실 입장하기:
-                ul
-            div#room
-                h3
-                ul
-                form#nickname
-                    input(placeholder = '사용하실 닉네임을 입력하세요.', required, type = 'text')
-                    button 설정
-                form#msg
-                    input(placeholder = '메세지를 입력하세요.', required, type = 'text')
-                    button 보내기
+        main
+            div#myStream
+                video#myFace(autoplay, playsinline,width="400",height="400")
+                button#mute 음소거
+                button#camera 비디오 중지
+                select#cameras
         script(src="/socket.io/socket.io.js") 
         script(src="/public/js/app.js") 

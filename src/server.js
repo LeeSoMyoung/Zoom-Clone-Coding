@@ -21,14 +21,17 @@ const SERVERNUM = 3000;
 const serverAddress = `http://localhost:${SERVERNUM}`;
 const handleListen = () => console.log(`Listening on ${serverAddress}`);
 
+
+
 const server = http.createServer(app); // http 서버
+
 const io = new Server(server, {
     cors: {
         origin: ["https://admin.socket.io"],
         credentials: true,
     },
 });
-
+/*
 instrument(io,{
     auth:false,
 });
@@ -92,7 +95,6 @@ io.on('connection', (socket) => {
     });
 });
 
-/*
 const wss = new WebSocket.Server({ server }); // 웹 소켓 서버 : http 서버를 돌리면 웹 소켓 서버도 실행
 
 const sockets = []; // 여러 사람이 서버에 들어올 수도 있으므로 그걸 저장하는 배열이 된다.
@@ -120,11 +122,11 @@ wss.on("connection", (socket) => {
     });
 });
 
-server.listen(SERVERNUM, handleListen);
-
 /*
-app.listen(SERVERNUM, handleListen);
-*/
-
 server.listen(SERVERNUM, handleListen);
 
+
+app.listen(SERVERNUM, handleListen);
+
+*/
+server.listen(SERVERNUM, handleListen);
