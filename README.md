@@ -98,7 +98,14 @@ whale 브라우저에서 메세지를 보내고 엔터를 치면,
   ![image](https://user-images.githubusercontent.com/47571973/128635199-bb78ed9f-bfe1-41ac-8303-9151e5a68fdb.png)
   ![image](https://user-images.githubusercontent.com/47571973/128635203-fe90f553-4b1d-4791-bcbc-acd90dd43a48.png)
 ![image](https://user-images.githubusercontent.com/47571973/128635206-31a30a5a-32d4-4f71-b209-707faca5f722.png)
+  
+  (5) 2021-08-11
+  
+  localtunnel을 이용해 전세계 서버와 연결할 수 있도록 한다.
+  ![image](https://user-images.githubusercontent.com/47571973/128997999-05a46f77-68bb-421f-9638-af951ddb5b75.png)
 
+  또한, 웹캠을 설정할 수 있도록하고, 음소거/ 비디오 중지를 설정했다.
+  ![image](https://user-images.githubusercontent.com/47571973/128998170-36a5c9b3-6489-42d7-a3d9-fa50072df52d.png)
 
 
 </div>
